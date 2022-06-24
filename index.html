@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK TO FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LINK TO BOOTSWATCH YETI THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+    <!-- LINK TO CUSTOM CSS FILE -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Listing App</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="heading">
+     <i class="fas fa-book-open icon"></i>My<span>Book</span>List
+    </h1>
+
+    <form action="" id="book-form" class="form">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Enter book title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="Enter Author's name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" placeholder="Provide ISBN" class="form-control">
+        </div>
+        <input type="submit" value="Add Book">
+    </form>
+
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+</div>
+
+<script src="/index.js" defer></script>
+</body>
+</html>
